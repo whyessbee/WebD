@@ -1,0 +1,49 @@
+<h1>HI The data is of <%=cd.data.covid19Stats[0].country%> as follows:</h1>
+
+
+     
+  <% var totalconfirmed=0,totaldeaths=0,totalrecovered=0; %>
+    <% cd.data.covid19Stats.forEach(function(state){ %>
+    
+        <%totalconfirmed+=state.confirmed;%>
+        <%totaldeaths+=state.deaths;%>
+        <%totalrecovered+=state.recovered;%>
+    
+
+    <%})%>
+ <p>   
+Total Cases : <%=totalconfirmed%><br>
+Total Deaths: <%=totaldeaths%><br>
+Total Recovered : <%=totalrecovered%><br>
+Last Checked: <%=cd.data.lastChecked%>
+
+<a href="/"> Search more!</a>
+</p>
+
+
+<div id="piechart"></div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">  </script>
+<script type="text/javascript">
+ google.charts.load('current', {'packages':['corechart']});
+   google.charts.setOnLoadCallback(drawChart);
+    
+      function drawChart() { 
+     var data = google.visualization.arrayToDataTable([ 
+     ['Case Statistics','Stats'],
+      ['Total Cases', <%=Number(totalconfirmed)%>], 
+      ['Total Deaths', <%=Number(totaldeaths)%>],
+      ['Total Recovered', <%=Number(totalrecovered)%>]
+     
+    ]); 
+    
+     
+     var options = {'title':'Covid Stats', 'width':550, 'height':400};
+    
+ 
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+    }
+
+</script>
+
+

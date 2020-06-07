@@ -1,0 +1,17 @@
+i.icon
+{
+font-size: 2em;
+}
+
+.container.main{
+    margin-top: 7.0em;
+}
+/* img {
+    width: 600px;
+    height: 500px;
+    object-fit: contain;
+  } */
+
+  #delete{
+      display: inline;
+  }
