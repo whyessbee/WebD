@@ -1,0 +1,37 @@
+{
+  "Gender": "Male",
+  "HeightMts": 1.71,
+  "WeightKgs": 96,
+  "BMI_Cal": 32.8,
+  "Risk": "Medium Risk"
+},{
+  "Gender": "Male",
+  "HeightMts": 1.61,
+  "WeightKgs": 85,
+  "BMI_Cal": 32.8,
+  "Risk": "Medium Risk"
+},{
+  "Gender": "Male",
+  "HeightMts": 1.8,
+  "WeightKgs": 77,
+  "BMI_Cal": 23.8,
+  "Risk": "Low Risk"
+},{
+  "Gender": "Female",
+  "HeightMts": 1.66,
+  "WeightKgs": 62,
+  "BMI_Cal": 22.5,
+  "Risk": "Low Risk"
+},{
+  "Gender": "Female",
+  "HeightMts": 1.5,
+  "WeightKgs": 70,
+  "BMI_Cal": 31.1,
+  "Risk": "Medium Risk"
+},{
+  "Gender": "Female",
+  "HeightMts": 1.67,
+  "WeightKgs": 82,
+  "BMI_Cal": 29.4,
+  "Risk": "Enhanced Risk"
+}
